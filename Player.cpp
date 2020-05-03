@@ -10,7 +10,7 @@ bool Player::hasNoInitialisedPiece()
 	return true;
 	//Written just so that error can be avoided
 }
-void Player::CheckTurn()
+void Player::checkTurn()
 {
 
 }
