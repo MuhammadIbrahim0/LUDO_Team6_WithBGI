@@ -13,7 +13,7 @@ private:
 	void putspawn();	//put player number(1,2,3..etc) in their respective spawn location
 	void isstop();		//checks wheather a stop/spawn is present in the ending location
 public:
-	
+	void print();
 	void removeFromTheBoard(const Position &pos);
 	void askToUndraw(const Position& pos);
 	void move(const Position& selectedPosition, int selectedScores);
