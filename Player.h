@@ -19,6 +19,7 @@ public:
 	bool hasInitilizedPiece();
 	void CheckTurn();
 	void move();
+	bool isPlayerWon();
 	~Player()
 	{
 
