@@ -2,7 +2,10 @@
 #include "Position.h"
 class Piece
 {
-private:
+private: 
+
+
+
 	//Position P;
 	int NoofSteps;
 	bool RoundCompleted = false;
