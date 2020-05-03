@@ -80,7 +80,7 @@ public:
 							m_board.highlightSelection();                     //Highlight the Selection Position
 							m_scoreboard.selectScore(m_selected_score);         //Select the Score to Move
 							removeScore(m_selected_score);                    //Remove the Score from the array of Scores
-							m_scoreboard.displayScores(m_scores[]);                //Print the Remaing Scores Available
+							m_scoreboard.displayScores(m_scores);                //Print the Remaing Scores Available
 						}
 					}
 					else {
@@ -90,7 +90,7 @@ public:
 					{
 						m_board.move(m_selected_position, m_selected_score);				//Move the Piece on the Board, Change the Position of Piece
 						if (m_players[static_cast<int>(m_turn)].isPlayerWon() && !m_is_playing_in_team) {
-							removeFromPlayingList();                            //remove from playing list….
+							removeFromPlayingList();                            //remove from playing listâ€¦.
 						}
 						else if (m_players[static_cast<int>(m_turn)].isPlayerWon()) {
 							getScores();                                    //Get the score because the team is there
@@ -98,7 +98,7 @@ public:
 						}
 						if (m_board.hasKilled()) {
 							getScores();                                    //Get the score because killed the piece
-							m_scoreboard.displayScores(m_scores);                        //Print the new Scores…
+							m_scoreboard.displayScores(m_scores);                        //Print the new Scoresâ€¦
 						}
 					}
 
