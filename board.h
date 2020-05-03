@@ -16,6 +16,8 @@ public:
 	void print();
 	void removeFromTheBoard(const Position &pos);
 	void askToUndraw(const Position& pos);
+	void highlightSelection();
+	bool hasKilled();
 	void move(const Position& selectedPosition, int selectedScores);
 
 };
