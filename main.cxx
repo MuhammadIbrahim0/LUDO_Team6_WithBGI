@@ -6,13 +6,16 @@
 using namespace std;
 
 #include "Ludu.h"
+#include "Constants.h"
+#include "Enums.h"
+
 int main()
 {
 	{
 		Ludu myludu;
 	}
 	
-	initwindow(500, 500, "First Sample");
+	initwindow(WINDOWWIDTH,WINDOWLENGTH, "First Sample", 250, 0);
 	circle(getmaxx()/2, getmaxy()/2, getmaxx()/3);
 	while (!kbhit())
 	{
