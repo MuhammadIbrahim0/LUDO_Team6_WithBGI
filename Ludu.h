@@ -61,7 +61,7 @@ public:
 					if (m_players[static_cast<int>(m_turn)].isPlayerWon() && m_is_playing_in_team)
 					{
 						m_previous_turn = m_turn;
-						m_teams.requestToTransferScores(m_turn);                    // Request to whom the player want to give score after winning
+						m_teams->requestToTransferScores(m_turn);                    // Request to whom the player want to give score after winning
 					}
 					if (!m_players[static_cast<int>(m_turn)].hasOnlyOnePieceOnBoard() && noSix()) {
 						do {
