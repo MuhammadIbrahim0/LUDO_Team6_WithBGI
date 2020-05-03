@@ -12,7 +12,7 @@
 using std::cout;
 using std::endl;
 using std::vector;
-class Ludu
+class Ludo
 {
 	LUDOCOLORS m_turn;
 	Board m_board;
@@ -35,11 +35,15 @@ private:
 	void removeFromPlayingList();
 	bool isValidPieceSelected();
 	void selectTheOnlyPiece();
+	bool isScoreArrayEmpty();
+	void changeTurn();
+	void ShowTurn();
+	bool isPlaying();
 	bool isGameOver() {
 		return false;
 	}
 public:
-	Ludu() {
+	Ludo() {
 		cout << "ludu Contructed" << endl;
 	}
 	void play(){
@@ -91,19 +95,17 @@ public:
 					removeFromPlayingList();                            //remove from playing list….
 				}
 				else if (m_players[static_cast<int>(m_turn)].isPlayerWon()) {
-					getScore();                                    //Get the score because the team is there
-					m_scoreboard.displayScores();                        //Print the new Scores...
+					getScores();                                    //Get the score because the team is there
+					m_scoreboard.displayScores(m_scores);                        //Print the new Scores...
 				}
 				if (m_board.hasKilled()) {
-					m_board.removeFromBoard(m_selected_Position);            //Remove the Piece from the Board
-					m_board.askToUndraw(m_selected_Position);                //Undraw the Piece from the Board
-					getScore();                                    //Get the score because killed the piece
+					getScores();                                    //Get the score because killed the piece
 					m_scoreboard.displayScores();                        //Print the new Scores…
 				}
 			} while (isScoreArrayEmpty() && isPlaying());
 		}
-		if (m_turn[previous_turn].isPlayerWon()) {
-			m_turn = previous_turn;
+		if (m_players[static_cast<int>(m_previous_turn)].isPlayerWon()) {
+			m_turn = m_previous_turn;
 		}
 		changeTurn();
 		ShowTurn();
@@ -111,9 +113,9 @@ public:
 	}
 
 
-	~Ludu() {
+	/*~Ludo() {
 		cout << "ludu Destructed" << endl;
-	}
+	}*/
 
 };
 
