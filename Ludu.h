@@ -92,7 +92,7 @@ public:
 					m_board.move(m_selected_position, m_selected_score);				//Move the Piece on the Board, Change the Position of Piece
 				}
 				if (m_players[static_cast<int>(m_turn)].isPlayerWon() && !m_is_playing_in_team) {
-					removeFromPlayingList();                            //remove from playing list….
+					removeFromPlayingList();                            //remove from playing listâ€¦.
 				}
 				else if (m_players[static_cast<int>(m_turn)].isPlayerWon()) {
 					getScores();                                    //Get the score because the team is there
@@ -100,7 +100,7 @@ public:
 				}
 				if (m_board.hasKilled()) {
 					getScores();                                    //Get the score because killed the piece
-					m_scoreboard.displayScores();                        //Print the new Scores…
+					m_scoreboard.displayScores();                        //Print the new Scoresâ€¦
 				}
 			} while (isScoreArrayEmpty() && isPlaying());
 		}
@@ -114,8 +114,8 @@ public:
 
 
 	/*~Ludo() {
-		cout << "ludu Destructed" << endl;
-	}*/
+		cout << "ludu Destructed" << endl;*/
+	}
 
 };
 
