@@ -71,6 +71,7 @@
     <ClCompile Include="mouse.cxx" />
     <ClCompile Include="palette.cxx" />
     <ClCompile Include="main.cxx" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="text.cxx" />
     <ClCompile Include="winbgi.cxx" />
     <ClCompile Include="winthread.cxx" />
@@ -79,6 +80,7 @@
     <ClInclude Include="dibutil.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="Ludu.h" />
+    <ClInclude Include="player.h" />
     <ClInclude Include="winbgi.h" />
     <ClInclude Include="winbgim.h" />
     <ClInclude Include="winbgitypes.h" />
