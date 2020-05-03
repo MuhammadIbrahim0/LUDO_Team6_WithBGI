@@ -17,6 +17,9 @@ public:
 	bool NoSix();
 	bool hasNoInitialisedPiece();
 	bool hasInitilizedPiece();
+	bool hasOnlyOnePieceOnBoard();
+	bool isHomePieceSelected();
+	void initilizePiece();
 	void checkTurn();
 	void move();
 	bool isPlayerWon();
