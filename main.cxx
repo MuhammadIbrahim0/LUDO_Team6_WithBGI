@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
 	{
-		Ludu myludu;
+		Ludo myludu;
 	}
 	
 	initwindow(WINDOWWIDTH,WINDOWLENGTH, "First Sample", 250, 0);
