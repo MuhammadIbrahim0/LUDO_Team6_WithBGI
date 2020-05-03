@@ -1,5 +1,5 @@
 #pragma once
-enum class PIECECOLOR {
+enum class LUDOCOLORS {
 	RED = 0,
 	YELLOW = 1,
 	GREEN = 2,

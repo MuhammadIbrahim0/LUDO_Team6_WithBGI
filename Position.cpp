@@ -13,9 +13,9 @@ void Position::sety(const int& y)
 }
 int Position::getx()
 {
-
+	return 0;
 }
 int Position::gety()
 {
-
+	return 0;
 }

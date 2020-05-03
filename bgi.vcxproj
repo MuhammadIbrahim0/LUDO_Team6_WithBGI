@@ -63,6 +63,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bgiout.cxx" />
+    <ClCompile Include="box.cpp" />
     <ClCompile Include="dibutil.cxx" />
     <ClCompile Include="drawing.cxx" />
     <ClCompile Include="file.cxx" />
@@ -72,15 +73,26 @@
     <ClCompile Include="palette.cxx" />
     <ClCompile Include="main.cxx" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="ScoreBoard.cpp" />
     <ClCompile Include="text.cxx" />
     <ClCompile Include="winbgi.cxx" />
     <ClCompile Include="winthread.cxx" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="board.h" />
+    <ClInclude Include="box.h" />
+    <ClInclude Include="Constants.h" />
     <ClInclude Include="dibutil.h" />
+    <ClInclude Include="Dice.h" />
+    <ClInclude Include="Enums.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="Ludu.h" />
+    <ClInclude Include="Piece.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="ScoreBoard.h" />
+    <ClInclude Include="Teams.h" />
     <ClInclude Include="winbgi.h" />
     <ClInclude Include="winbgim.h" />
     <ClInclude Include="winbgitypes.h" />
