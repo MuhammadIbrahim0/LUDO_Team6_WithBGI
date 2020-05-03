@@ -16,6 +16,7 @@ private:
 public:
 	bool NoSix();
 	bool hasNoInitialisedPiece();
+	bool hasInitilizedPiece();
 	void CheckTurn();
 	void move();
 	~Player()
