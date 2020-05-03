@@ -66,6 +66,7 @@
     <ClCompile Include="dibutil.cxx" />
     <ClCompile Include="drawing.cxx" />
     <ClCompile Include="file.cxx" />
+    <ClCompile Include="Ludu.cpp" />
     <ClCompile Include="misc.cxx" />
     <ClCompile Include="mouse.cxx" />
     <ClCompile Include="palette.cxx" />
@@ -77,6 +78,7 @@
   <ItemGroup>
     <ClInclude Include="dibutil.h" />
     <ClInclude Include="graphics.h" />
+    <ClInclude Include="Ludu.h" />
     <ClInclude Include="winbgi.h" />
     <ClInclude Include="winbgim.h" />
     <ClInclude Include="winbgitypes.h" />
