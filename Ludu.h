@@ -20,8 +20,9 @@ class Ludu
 	Player* m_players;
 	Position m_selected_postion;
 	vector<Player*>m_playings;
-	int m_number_of_players;
-	vector<int>m_scores;
+	short m_number_of_players;
+	short m_number_of_teams;
+	vector<short>m_scores;
 private:
 	void getScore();
 	bool noSix();
@@ -33,7 +34,9 @@ public:
 	Ludu() {
 		cout << "ludu Contructed" << endl;
 	}
-
+	void play() {
+		cout << "Playing Ludo";
+	}
 
 	~Ludu() {
 		cout << "ludu Destructed" << endl;
