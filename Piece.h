@@ -10,6 +10,7 @@ private:
 	int NoofSteps;
 	bool RoundCompleted = false;
 	bool Iskill = false;
+	bool succeeded;
 	bool IsSix;
 public:
 	void draw();
