@@ -1,5 +1,6 @@
 #pragma once
 #include "Position.h"
+#include "Enums.h"
 class Piece
 {
 private: 
