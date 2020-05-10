@@ -9,19 +9,20 @@ class Player
 {
 private:
 	LUDOCOLORS color;
-	Box	*Ladder;
+	Box*Ladder;
 	Piece pieces[4];
     bool hasKilled;
 	Board * m_board;
+	
 public:
-	bool NoSix();
+	bool NoSix(int number);
 	bool hasNoInitialisedPiece();
 	bool hasInitilizedPiece();
 	bool hasOnlyOnePieceOnBoard();
 	bool isHomePieceSelected();
 	void initilizePiece();
-	void checkTurn();
-	void move();
+	bool checkTurn();
+	void move(Position M, Position N);
 	bool isPlayerWon();
 	~Player()
 	{
