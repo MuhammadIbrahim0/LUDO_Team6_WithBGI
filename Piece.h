@@ -3,41 +3,41 @@
 #include "Enums.h"
 class Piece
 {
-private: 
-
-
-
+private:
 	Position P;
+	int Radius;
 	int NoofSteps;
-	int Radius
 	bool RoundCompleted = false;
 	bool Iskill = false;
-	bool succeeded;
+	bool Succeeded;
 	bool IsSix;
 	LUDOCOLORS m_color;
 public:
+	Piece() {}
 	LUDOCOLORS getColor()
 	{
 		return m_color;
 	}
-	bool IsInLobby()
+	bool isInLobby()
 	{
 		return true;
 	}
-	bool succeeded()
-	{
-		return true;
-
-	}
-	bool IsKilled()
+	bool isSucceeded()
 	{
 		return true;
 	}
+	bool isKilled()
+	{
+		return true;
+	}
 
-	void draw();
-	void undraw(LUDOCOLORS color) {
+	void draw() {
 
 	}
-    	void move(Position S, Position E);
-	bool Mypiece();
+	void unDraw(LUDOCOLORS color) {
+
+	}
+	void move(Position S, Position E) {
+
+	}
 };
