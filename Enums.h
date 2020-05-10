@@ -5,5 +5,6 @@ enum class LUDOCOLORS {
 	GREEN = 2,
 	BLUE = 3,
 	GRAY = 4,
-	PURPLE = 5
+	PURPLE = 5,
+	WHITE = 6
 };
