@@ -2,8 +2,6 @@
 #include<time.h>
 #include<iostream>
 
-using namespace std;
-
 class Dice
 {
 	int m_score;
