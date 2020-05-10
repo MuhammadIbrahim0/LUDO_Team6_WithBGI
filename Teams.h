@@ -6,7 +6,13 @@ public:
 	Player* ps;
 	int noOfTeams;
 	void requestToTransferScores(LUDOCOLORS C);
-	Teams() {
+	Teams() 
+	{
+		
+	}
+	Teams(int number)
+	{
+	   noOfTeams=number;
 	}
 	~Teams() {
 	}
