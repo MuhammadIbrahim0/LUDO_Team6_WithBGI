@@ -7,14 +7,14 @@ private:
 
 
 
-	//Position P;
+	Position P;
 	int NoofSteps;
+	int Radius
 	bool RoundCompleted = false;
 	bool Iskill = false;
 	bool succeeded;
 	bool IsSix;
 	LUDOCOLORS m_color;
-	friend class Box;
 public:
 	LUDOCOLORS getColor()
 	{
@@ -35,6 +35,9 @@ public:
 	}
 
 	void draw();
-    void move(Position S, Position E);
+	void undraw(LUDOCOLORS color) {
+
+	}
+    	void move(Position S, Position E);
 	bool Mypiece();
 };
