@@ -53,6 +53,7 @@ bool Player::hasNoInitialisedPiece()
 }
 bool Player::hasOnlyOnePieceOnBoard()
 {
+	int isinlobby;
 	int remember=0;
 	for (int c=0;c<4;c++)
 	{
@@ -77,7 +78,7 @@ bool Player::hasOnlyOnePieceOnBoard()
 			HaveSucceeded++;
 		}
 	}
-	int total=HaveSucceeded+HaveDied+IsInLobby;
+	int total=HaveSucceeded+HaveDied+ isinlobby;
 	if (total ==3)
 		return true;
 	else
@@ -92,19 +93,19 @@ bool Player::isHomePieceSelected()
 }
 void Player::initilizePiece()
 {
-	Position S;
+	//Position S;
 	//SafetyPoint() in board returns the position of the safety point on the board for the Player
-	S=m_Board.SafetyPoint();
-	int remember;
-	for (int c=0;c<4;c++)
-	{
-		if (pieces[c].IsInLobby()==true)
-		{
-			remember =c;
-		}
-	}
+	//S=m_board->SafetyPoint();
+	//int remember;
+	//for (int c=0;c<4;c++)
+	//{
+		//if (pieces[c].IsInLobby()==true)
+		//{
+			//remember =c;
+	///	}
+//	}
 	//The below function moves the piece in lobby to the initialisation position
-	pieces[remember].Move();
+   	//pieces[remember]->Move();
 }
 bool Player::checkTurn()
 {
@@ -118,7 +119,7 @@ bool Player::isPlayerWon()
 	int n=0;
 	for (int m=0;m<4;m++)
 	{
-		if (pieces[m].succeeded==1)
+		if (pieces[m].succeeded()==1)
 		{
 			n++;
 		}
@@ -132,6 +133,7 @@ bool Player::isPlayerWon()
 }
 void Player::move(Position M,Position N)
 {
-	Player.Pieces.move(M,N);
+	Piece.move(M,N);
+
 }
 
