@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include "board.h"
 bool Player::NoSix(int number)
 {
 	//The function takes the result of the dice "number" when called in main and returns whether a 6 was part of the dice roll.
@@ -20,6 +20,7 @@ bool Player::hasInitilizedPiece()
 }
 bool Player::hasNoInitialisedPiece()
 {
+	int isinlobby;
 	int remember=0;
 	for (int c=0;c<4;c++)
 	{
@@ -44,7 +45,7 @@ bool Player::hasNoInitialisedPiece()
 			HaveSucceeded++;
 		}
 	}
-	int total=HaveSucceeded+HaveDied+IsInLobby;
+	int total=HaveSucceeded+HaveDied + isinlobby;
 	if (total ==4)
 		return true;
 	else
@@ -63,7 +64,7 @@ bool Player::hasOnlyOnePieceOnBoard()
 	int HaveDied=0;
 	for (int c=0;c<4;c++)
 	{
-		if (pieces[c].IsKilled()==true)
+		if (pieces[c]->IsKilled()==true)
 		{
 			HaveDied++;
 		}
@@ -71,7 +72,7 @@ bool Player::hasOnlyOnePieceOnBoard()
 	int HaveSucceeded=0;
 	for (int c=0;c<4;c++)
 	{
-		if (pieces[c].succeeded()==true)
+		if (pieces[c]->succeeded()==true)
 		{
 			HaveSucceeded++;
 		}
@@ -93,7 +94,7 @@ void Player::initilizePiece()
 {
 	Position S;
 	//SafetyPoint() in board returns the position of the safety point on the board for the Player
-	S=Board.SafetyPoint();
+	S=m_Board.SafetyPoint();
 	int remember;
 	for (int c=0;c<4;c++)
 	{
