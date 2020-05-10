@@ -20,7 +20,21 @@ public:
 	{
 		return m_color;
 	}
+	bool IsInLobby()
+	{
+		return true;
+	}
+	bool succeeded()
+	{
+		return true;
+
+	}
+	bool IsKilled()
+	{
+		return true;
+	}
+
 	void draw();
-	void move();
+    void move(Position S, Position E);
 	bool Mypiece();
 };
