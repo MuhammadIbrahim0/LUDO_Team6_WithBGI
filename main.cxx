@@ -13,6 +13,8 @@ int main()
 {
 	{
 		Ludo myludu;
+		//Okay Got it
+		//hello
 	}
 	
 	initwindow(WINDOWWIDTH,WINDOWLENGTH, "First Sample", 250, 0);
